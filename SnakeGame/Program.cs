@@ -21,6 +21,7 @@ namespace SnakeGame
             snake.Boundary();
             snake.Appear();
             snake.Move();
+
             
         }
     }

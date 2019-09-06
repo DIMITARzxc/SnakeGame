@@ -10,17 +10,18 @@ namespace SnakeGame
     {
         public int appleX = 10;
         public int appleY = 10;
-        public int applesEaten = 0;
+      
+        public bool IsAppleEaten = false;
         Random random = new Random();
-
         
         
 
-        
+
+
         public void SpawnApple()
         {
 
-            appleX = random.Next(0 + 2, 70 - 2);
+            appleX = random.Next(2, 70-2);
             appleY = random.Next(0 + 2, 40 - 2);
         }
         public void PaintApple()
@@ -29,10 +30,7 @@ namespace SnakeGame
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write((char)64);
         }
-        public void AppleEaten()
-        {
-
-        }
+       
 
 
     }
